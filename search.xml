@@ -1,6 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>OpenCv日记_0</title>
+    <url>/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/</url>
+    <content><![CDATA[<h1 id="OpenCv日记-lt-1-gt"><a href="#OpenCv日记-lt-1-gt" class="headerlink" title="OpenCv日记&lt;1&gt;"></a>OpenCv日记&lt;1&gt;</h1><a id="more"></a>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p><strong>OpenCv</strong>是开源的计算机视觉库。考研时买了一本《OpenCv3编程入门》自学了一段时间，对其中的图像处理和计算机视觉相关知识有了一定的认识。不过现在要重新进行学习和认识，参考的书依旧是这本《OpenCv3编程入门》，我会把我在Opencv上所学的知识在博客中进行记录。OpenCv概念什么的不在阐述。</p>
+<h2 id="OpenCv安装和环境配置"><a href="#OpenCv安装和环境配置" class="headerlink" title="OpenCv安装和环境配置"></a>OpenCv安装和环境配置</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><ul>
+<li>首先在官网上下载OpenCV SDK<br><img src="/.com//1.jpg" alt="下载">  </li>
+<li>安装页面大概这样:<br><img src="/.com//2.jpg" alt="安装页面"><br>直接安装  </li>
+<li>安装:<br><img src="/.com//3.jpg" alt="安装页面">  <h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3></li>
+<li>修改环境中的PATH：<br><img src="/.com//4.jpg" alt="安装页面"><br>这里要说一下根据你的vs版本不同配置的vc10、vc4不同，我使用的是vs2015所以用的是vc14  <h3 id="配置Visual-Studio"><a href="#配置Visual-Studio" class="headerlink" title="配置Visual Studio"></a>配置Visual Studio</h3></li>
+</ul>
+<p><strong>工程包含环境配置</strong>  </p>
+<ul>
+<li>先创建一个空项目<br><img src="/.com//5.jpg" alt="安装页面">  </li>
+<li>打开属性管理器<br><img src="/.com//7.jpg" alt="安装页面">  </li>
+<li>选择这个<br><img src="/.com//8.jpg" alt="安装页面"> </li>
+<li>VC++目录中的包含目录 添加三条路径：<br><img src="/.com//9.jpg" alt="安装页面">    </li>
+</ul>
+<p><strong>工程库环境配置</strong>  </p>
+<ul>
+<li>配置<br><img src="/.com//10.jpg" alt="安装页面">  </li>
+</ul>
+<p><strong>链接库配置</strong></p>
+<ul>
+<li>配置<br><img src="/.com//11.jpg" alt="安装页面"><br>完成配置，准备测试，代码如下:<br><img src="/.com//12.jpg" alt="安装页面">  </li>
+<li>测试成功！<blockquote>
+<p>注意：此时要用x64编译  </p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/.com//13.jpg" alt="安装页面"> </p>
+]]></content>
+      <categories>
+        <category>OpenCv</category>
+      </categories>
+      <tags>
+        <tag>OpenCv</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git使用和部署</title>
+    <url>/2020/03/07/git%E4%BD%BF%E7%94%A8%E5%92%8C%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<h1 id="git的使用和部署"><a href="#git的使用和部署" class="headerlink" title="git的使用和部署"></a>git的使用和部署</h1><a id="more"></a>
+<h2 id="git的下载"><a href="#git的下载" class="headerlink" title="git的下载"></a>git的下载</h2><p>官网下载安装包: <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
+<h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><p>下载的exe程序双击打开后一直next到finish结束</p>
+<h2 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h2><p>运行Git Bash Here  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;&#x2F;&#x2F; 填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+<p>然后一直回车，这一步可以生成一个密匙保留在：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Users\8\.ssh\id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>这里面8对应的就是你的Windows用户名<br>用文本编译器打开，复制里面的内容并在你的github账户中建立一个ssh的秘钥。<br>具体步骤是在：setting-&gt;SSH and GPG keys-&gt;点击Add SSH Keys<br>然后在Git Bash Here 中输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
+<p>提示内容一律yes<br>最后一步，全局配置你的git信息</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name &quot;qiuyeyijian&quot;     &#x2F;&#x2F; 你的github用户名，非昵称</span><br><span class="line">$ git config --global user.email  &quot;xxx@gmail.com&quot; &#x2F;&#x2F; 填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+<h2 id="github上传代码"><a href="#github上传代码" class="headerlink" title="github上传代码"></a>github上传代码</h2><ul>
+<li>git操作  <blockquote>
+<p>1.新建一个空的文件夹<br>2.在文件夹中进行git命令，先进行git初始化  </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
+<li>进行github操作<blockquote>
+<p>在github上创建一个仓库<br>创建好的仓库有两个地址：SSH地址、Http地址</p>
+</blockquote>
+</li>
+<li>上传到github上<blockquote>
+<p>将远程仓库克隆到本地</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone &quot;SSH地址&quot;  &#x2F;&#x2F;将地址换成刚才复制的SSH地址</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>文件中会出来一个github仓库名的文件夹<br>把你要上传的代码项目内容放在此文件夹中<br>命令进入此文件夹: <strong>cd 文件名</strong><br><strong>依次输入以下代码</strong>  </p>
+</blockquote>
+</li>
+</ul>
+<p>//注意后面的‘点’</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1: git add .</span><br></pre></td></tr></table></figure>
+<p>//first commit 换成你要提交的信息，而且这个命令不能少  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">2: git commit -m &quot;first commit&quot;</span><br></pre></td></tr></table></figure>
+<p>//换成你要提交的GitHub仓库SSH地址  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">3: git remote add origin SSH地址</span><br></pre></td></tr></table></figure>
+<p>若第3步出错：提示出错信息：fatal: remote origin already exists.<br>解决方法:</p>
+<blockquote>
+<ul>
+<li>先输入 git remote rm origin  </li>
+<li>再输入 <strong>SSH地址后面是去掉git为github.io.git</strong> 就不会报错了！  </li>
+<li>如果输入 git remote rm origin 还是报错的话，error: Could not remove config section ‘remote.origin’.<br>我们需要修改gitconfig文件的内容git config –global user.name “qiuyeyijian” // 你的github用户名，非昵称<br>git config –global user.email “<a href="mailto:xxx@gmail.com">xxx@gmail.com</a>“ // 填写你的github注册邮箱</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">4: git push -u origin master</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>1、如果在github的remote上已经有了文件，会出现错误。此时应当先pull一下，即：  </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+<p>然后再进行： </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+
+<p>上传基本完成!<br>参考:<a href="https://www.jianshu.com/p/aab3801fe9a5" target="_blank" rel="noopener">https://www.jianshu.com/p/aab3801fe9a5</a></p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于next主题的使用</title>
     <url>/2020/03/07/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="hexo博客next主题的使用总结"><a href="#hexo博客next主题的使用总结" class="headerlink" title="hexo博客next主题的使用总结"></a>hexo博客next主题的使用总结</h1><a id="more"></a>
