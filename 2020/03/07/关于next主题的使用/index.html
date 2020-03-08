@@ -89,14 +89,16 @@
 <meta name="description" content="hexo博客next主题的使用总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于next主题的使用">
-<meta property="og:url" content="http://yoursite.com/2020/03/07/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:url" content="https://pigword.github.io/2020/03/07/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Pigword记录">
 <meta property="og:description" content="hexo博客next主题的使用总结">
+<meta property="og:image" content="https://pigword.github.io/2020/03/07/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%9B%BE%E7%89%87%E5%90%8D.jpg">
 <meta property="article:published_time" content="2020-03-07T08:06:06.000Z">
-<meta property="article:modified_time" content="2020-03-07T09:46:03.556Z">
+<meta property="article:modified_time" content="2020-03-08T10:13:51.929Z">
 <meta property="article:author" content="GQ">
 <meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pigword.github.io/2020/03/07/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%9B%BE%E7%89%87%E5%90%8D.jpg">
 
 
 
@@ -126,7 +128,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/03/07/关于next主题的使用/"/>
+  <link rel="canonical" href="https://pigword.github.io/2020/03/07/关于next主题的使用/"/>
 
 
 
@@ -293,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/07/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8/">
+    <link itemprop="mainEntityOfPage" href="https://pigword.github.io/2020/03/07/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GQ">
@@ -419,6 +421,56 @@
 <h3 id="8-添加内容分享功能"><a href="#8-添加内容分享功能" class="headerlink" title="8.添加内容分享功能"></a>8.添加内容分享功能</h3><p>在主题配置文件中将 <strong>jiathis</strong> 属性参数由false改为 <strong>true</strong> </p>
 <h3 id="9-加载动画"><a href="#9-加载动画" class="headerlink" title="9.加载动画"></a>9.加载动画</h3><p>在主题配置文件中找到<strong>pace</strong>属性值改为<strong>true</strong><br>下面的<strong>pace_theme</strong>改为上面列举的几种</p>
 <h3 id="10-隐藏页面中的“强力驱动”"><a href="#10-隐藏页面中的“强力驱动”" class="headerlink" title="10.隐藏页面中的“强力驱动”"></a>10.隐藏页面中的“强力驱动”</h3><p>在主题文件中的<strong><em>layout/_partials/footer</em></strong><br>直接把if theme.footer.powered中的内容直接注释掉就行了</p>
+<h3 id="11-标签和分类的多个演示"><a href="#11-标签和分类的多个演示" class="headerlink" title="11.标签和分类的多个演示"></a>11.标签和分类的多个演示</h3><p>对于<strong>标签</strong>来说具有同级分类使用的格式:  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">  - 标签名1</span><br><span class="line">  - 标签名2</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line">对于**分类**来说hexo没有同级分类:</span><br></pre></td></tr></table></figure>
+<p>categories: </p>
+<ul>
+<li>分类1</li>
+<li>子分类1<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 12.博客中添加图片</span><br><span class="line">- 下载一个插件:  </span><br><span class="line">可以在hexo目录下执行git命令：</span><br></pre></td></tr></table></figure>
+npm install hexo-asset-image –save<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 把站点配置文件中的**post_asset_folder**属性改为**true**</span><br><span class="line">- 此时当你创建博文时 会在当前目录下出现一个和.md一样名字的文件夹，这个文件夹里面就是存储图片的   </span><br><span class="line"></span><br><span class="line">- 使用markdown语法:  xxxx就是文件夹名</span><br></pre></td></tr></table></figure>
+<img src="/2020/03/07/%E5%85%B3%E4%BA%8Enext%E4%B8%BB%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8/%E5%9B%BE%E7%89%87%E5%90%8D.jpg" alt="你想输入的替代文字"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如果出现图片在hexo s 后不加载，解决方案:</span><br><span class="line">&gt; 本人第一次搞也是出了很大问题，在网上找了很多方法最后找到这个：https:&#x2F;&#x2F;blog.csdn.net&#x2F;xjm850552586&#x2F;article&#x2F;details&#x2F;84101345?depth_1-utm_source&#x3D;distribute.pc_relevant.none-task&amp;utm_source&#x3D;distribute.pc_relevant.none-task  </span><br><span class="line"></span><br><span class="line">大致就是把下载插件中的js代码修改一下，修改为：</span><br></pre></td></tr></table></figure>
+‘use strict’;<br>var cheerio = require(‘cheerio’);</li>
+</ul>
+<p>// <a href="http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string" target="_blank" rel="noopener">http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string</a><br>function getPosition(str, m, i) {<br>  return str.split(m, i).join(m).length;<br>}</p>
+<p>var version = String(hexo.version).split(‘.’);<br>hexo.extend.filter.register(‘after_post_render’, function(data){<br>  var config = hexo.config;<br>  if(config.post_asset_folder){<br>        var link = data.permalink;<br>    if(version.length &gt; 0 &amp;&amp; Number(version[0]) == 3)<br>       var beginPos = getPosition(link, ‘/‘, 1) + 1;<br>    else<br>       var beginPos = getPosition(link, ‘/‘, 3) + 1;<br>    // In hexo 3.1.1, the permalink of “about” page is like “…/about/index.html”.<br>    var endPos = link.lastIndexOf(‘/‘) + 1;<br>    link = link.substring(beginPos, endPos);</p>
+<pre><code>var toprocess = [&apos;excerpt&apos;, &apos;more&apos;, &apos;content&apos;];
+for(var i = 0; i &lt; toprocess.length; i++){
+  var key = toprocess[i];
+
+  var $ = cheerio.load(data[key], {
+    ignoreWhitespace: false,
+    xmlMode: false,
+    lowerCaseTags: false,
+    decodeEntities: false
+  });
+
+  $(&apos;img&apos;).each(function(){
+    if ($(this).attr(&apos;src&apos;)){
+        // For windows style path, we replace &apos;\&apos; to &apos;/&apos;.
+        var src = $(this).attr(&apos;src&apos;).replace(&apos;\\&apos;, &apos;/&apos;);
+        if(!/http[s]*.*|\/\/.*/.test(src) &amp;&amp;
+           !/^\s*\//.test(src)) {
+          // For &quot;about&quot; page, the first part of &quot;src&quot; can&apos;t be removed.
+          // In addition, to support multi-level local directory.
+          var linkArray = link.split(&apos;/&apos;).filter(function(elem){
+            return elem != &apos;&apos;;
+          });
+          var srcArray = src.split(&apos;/&apos;).filter(function(elem){
+            return elem != &apos;&apos; &amp;&amp; elem != &apos;.&apos;;
+          });
+          if(srcArray.length &gt; 1)
+            srcArray.shift();
+          src = srcArray.join(&apos;/&apos;);
+          $(this).attr(&apos;src&apos;, config.root + link + src);
+          console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);
+        }
+    }else{
+        console.info&amp;&amp;console.info(&quot;no src attr, skipped...&quot;);
+        console.info&amp;&amp;console.info($(this));
+    }
+  });
+  data[key] = $.html();
+}</code></pre><p>  }<br>});<br>```</p>
 
       
     </div>
@@ -568,7 +620,7 @@ var jiathis_config={
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -579,7 +631,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -590,7 +642,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -639,7 +691,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo博客next主题的使用总结"><span class="nav-number">1.</span> <span class="nav-text">hexo博客next主题的使用总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">1.2.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-改为中文"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.改为中文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-增加标签页和分类页"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.增加标签页和分类页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-更改头像"><span class="nav-number">1.2.3.</span> <span class="nav-text">3.更改头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-设置全文阅读"><span class="nav-number">1.2.4.</span> <span class="nav-text">4.设置全文阅读</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-添加动态背景"><span class="nav-number">1.2.5.</span> <span class="nav-text">5.添加动态背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-增加搜索功能"><span class="nav-number">1.2.6.</span> <span class="nav-text">6.增加搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-添加数据统计"><span class="nav-number">1.2.7.</span> <span class="nav-text">7.添加数据统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-添加内容分享功能"><span class="nav-number">1.2.8.</span> <span class="nav-text">8.添加内容分享功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-加载动画"><span class="nav-number">1.2.9.</span> <span class="nav-text">9.加载动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-隐藏页面中的“强力驱动”"><span class="nav-number">1.2.10.</span> <span class="nav-text">10.隐藏页面中的“强力驱动”</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo博客next主题的使用总结"><span class="nav-number">1.</span> <span class="nav-text">hexo博客next主题的使用总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">1.2.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-改为中文"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.改为中文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-增加标签页和分类页"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.增加标签页和分类页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-更改头像"><span class="nav-number">1.2.3.</span> <span class="nav-text">3.更改头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-设置全文阅读"><span class="nav-number">1.2.4.</span> <span class="nav-text">4.设置全文阅读</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-添加动态背景"><span class="nav-number">1.2.5.</span> <span class="nav-text">5.添加动态背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-增加搜索功能"><span class="nav-number">1.2.6.</span> <span class="nav-text">6.增加搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-添加数据统计"><span class="nav-number">1.2.7.</span> <span class="nav-text">7.添加数据统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-添加内容分享功能"><span class="nav-number">1.2.8.</span> <span class="nav-text">8.添加内容分享功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-加载动画"><span class="nav-number">1.2.9.</span> <span class="nav-text">9.加载动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-隐藏页面中的“强力驱动”"><span class="nav-number">1.2.10.</span> <span class="nav-text">10.隐藏页面中的“强力驱动”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-标签和分类的多个演示"><span class="nav-number">1.2.11.</span> <span class="nav-text">11.标签和分类的多个演示</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
