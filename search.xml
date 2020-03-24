@@ -1,6 +1,299 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>数据库技术复习</title>
+    <url>/2020/03/24/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="数据库技术"><a href="#数据库技术" class="headerlink" title="数据库技术"></a>数据库技术</h1><a id="more"></a>
+]]></content>
+      <categories>
+        <category>计算机基础知识</category>
+      </categories>
+      <tags>
+        <tag>cs</tag>
+        <tag>基础</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>spring-boot-2</title>
+    <url>/2020/03/24/spring-boot-2/</url>
+    <content><![CDATA[<h1 id="SpringBoot项目演示"><a href="#SpringBoot项目演示" class="headerlink" title="SpringBoot项目演示"></a>SpringBoot项目演示</h1><h2 id="导入github上的开源项目"><a href="#导入github上的开源项目" class="headerlink" title="导入github上的开源项目"></a>导入github上的开源项目</h2><blockquote>
+<p>1.打开github并下载开源项目</p>
+</blockquote>
+<p><img src="/2020/03/24/spring-boot-2/1.jpg" alt></p>
+<p><img src="/2020/03/24/spring-boot-2/2.jpg" alt></p>
+<blockquote>
+<p>2.打开IDEA,导入</p>
+</blockquote>
+<p>点击import<br><img src="/2020/03/24/spring-boot-2/3.jpg" alt></p>
+<p>选择之前下载的项目<br><img src="/2020/03/24/spring-boot-2/4.jpg" alt></p>
+<p>下一步<br><img src="/2020/03/24/spring-boot-2/5.jpg" alt></p>
+<p>进入之后idea要自己下载相关配置环境<br><img src="/2020/03/24/spring-boot-2/6.jpg" alt></p>
+<p>安装完需要安装lombok插件:<br>参考:<a href="https://jingyan.baidu.com/article/0a52e3f4e53ca1bf63ed725c.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/0a52e3f4e53ca1bf63ed725c.html</a>  </p>
+<p>安装后可能还有错误:<br><img src="/2020/03/24/spring-boot-2/7.jpg" alt><br>百度一下idea版本低需要改gradle版本:<br>更改:  </p>
+<p>…..这里有问题尚未解决</p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>spring boot项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>spring boot-1</title>
+    <url>/2020/03/17/spring-boot-1/</url>
+    <content><![CDATA[<h1 id="SpringBoot基础"><a href="#SpringBoot基础" class="headerlink" title="SpringBoot基础"></a>SpringBoot基础</h1><h2 id="SpringBoot简介"><a href="#SpringBoot简介" class="headerlink" title="SpringBoot简介"></a>SpringBoot简介</h2><h3 id="Spring框架优缺点"><a href="#Spring框架优缺点" class="headerlink" title="Spring框架优缺点"></a>Spring框架优缺点</h3><p>Spring的优点分析:  </p>
+<p>Spring是Java企业版（Java Enterprise Edition，JEE，也称J2EE）的轻量级代替品。无需开发重量级的Enterprise JavaBean（EJB），Spring为企业级Java开发提供了一种相对简单的方法，通过依赖注入和面向切面编程，用简单的Java对象（Plain Old Java Object，POJO）实现了EJB的功能。</p>
+<p>Spring的缺点分析:<br>配置非常麻烦。耗费时间。版本冲突问题很难解决。  </p>
+<h3 id="SpringBoot特点"><a href="#SpringBoot特点" class="headerlink" title="SpringBoot特点"></a>SpringBoot特点</h3><ul>
+<li>基于spring开发，入门简单  </li>
+<li>无需xml配置，开箱即用  </li>
+<li>提供了大型项目中常见的非功能性特征，如：嵌入式服务器、安全、指标，健康检测、外部配置等  </li>
+<li>SpringBoot不是对Spring功能上的增强，而是提供了一种<strong>快速使用Spring</strong>的方式  </li>
+</ul>
+<p>SpringBoot<strong>核心功能：</strong>  </p>
+<ul>
+<li><p>起步依赖</p>
+<p>起步依赖本质上是一个Maven项目对象模型（Project Object Model，POM），定义了对其他库的传递依赖，这些东西加在一起即支持某项功能。</p>
+<p>简单的说，起步依赖就是将具备某种功能的坐标打包到一起，并提供一些默认的功能。</p>
+</li>
+<li><p>自动配置</p>
+<p>Spring Boot的自动配置是一个运行时（更准确地说，是应用程序启动时）的过程，考虑了众多因素，才决定Spring配置应该用哪个，不该用哪个。该过程是Spring自动完成的。  </p>
+</li>
+</ul>
+<h2 id="SpringBoot快速入门"><a href="#SpringBoot快速入门" class="headerlink" title="SpringBoot快速入门"></a>SpringBoot快速入门</h2><h3 id="1-创建Maven工程"><a href="#1-创建Maven工程" class="headerlink" title="1.创建Maven工程"></a>1.创建Maven工程</h3><p><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C1.jpg" alt><br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C2.jpg" alt><br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C3.png" alt>  </p>
+<h3 id="2-添加SpringBoot的起步依赖"><a href="#2-添加SpringBoot的起步依赖" class="headerlink" title="2.添加SpringBoot的起步依赖"></a>2.添加SpringBoot的起步依赖</h3><p>SpringBoot要求，项目要继承SpringBoot的起步依赖spring-boot-starter-parent</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.1.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>SpringBoot要集成SpringMVC进行Controller的开发，所以项目要导入web的启动依赖</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line">```  </span><br><span class="line">![](spring-boot-1\4.jpg)</span><br><span class="line"></span><br><span class="line">### 3.编写SpringBoot引导类  </span><br><span class="line"></span><br><span class="line">要通过SpringBoot提供的引导类起步SpringBoot才可以进行访问</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">package com.itheima;</span><br><span class="line"></span><br><span class="line">import org.springframework.boot.SpringApplication;</span><br><span class="line">import org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"></span><br><span class="line">@SpringBootApplication</span><br><span class="line">public class MySpringBootApplication &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        SpringApplication.run(MySpringBootApplication.class);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C5.png" alt> </p>
+<p>运行main方法<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C6.jpg" alt><br>以运行Tomcat：<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C7.jpg" alt></p>
+<p>以上完成了springboot的环境基本配置  </p>
+<h3 id="编写Controller"><a href="#编写Controller" class="headerlink" title="编写Controller"></a>编写Controller</h3><p>在引导类MySpringBootApplication同级包或者子级包中创建QuickStartController</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.controller;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Controller;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.ResponseBody;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuickStartController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"/quick"</span>)</span><br><span class="line">    <span class="meta">@ResponseBody</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">quick</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"springboot 访问成功!"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C8.jpg" alt><br>运行后访问localhost:8080/quick:<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C9.jpg" alt></p>
+<h2 id="SpringBoot工程热部署"><a href="#SpringBoot工程热部署" class="headerlink" title="SpringBoot工程热部署"></a>SpringBoot工程热部署</h2><p>我们在开发中反复修改类、页面等资源，每次修改后都是需要重新启动才生效，这样每次启动都很麻烦，浪费了大量的时间，我们可以在修改代码后不重启就能生效，在 pom.xml 中添加如下配置就可以实现这样的功能，我们称之为热部署。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--热部署配置--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>注意：IDEA进行SpringBoot热部署失败原因</p>
+<p>出现这种情况，并不是热部署配置问题，其根本原因是因为Intellij IEDA默认情况下不会自动编译，需要对IDEA进行自动编译的设置，如下：<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C10.jpg" alt></p>
+<p>然后 Shift+Ctrl+Alt+/，选择Registry<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C11.jpg" alt></p>
+<p>其实<strong>热部署</strong>就是在运行时对代码修改服务器方面也直接修改。</p>
+<h2 id="IDEA快速创建SpringBoot"><a href="#IDEA快速创建SpringBoot" class="headerlink" title="IDEA快速创建SpringBoot"></a>IDEA快速创建SpringBoot</h2><p><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C12.jpg" alt></p>
+<p><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C13.jpg" alt><br>这一步可以根据你的项目进行适当的勾选<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C14.jpg" alt><br>创建的结构如下<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C15.jpg" alt></p>
+<p>创建Controller文件，访问测试<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C16.jpg" alt><br>结果如下<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C17.jpg" alt><br>完成springboot的快速创建  </p>
+<p>更改Tomcat默认端口号：<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C18.jpg" alt><br>修改当前项目名称:<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C19.jpg" alt><br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C20.jpg" alt>  </p>
+<h2 id="SpringBoot配置文件"><a href="#SpringBoot配置文件" class="headerlink" title="SpringBoot配置文件"></a>SpringBoot配置文件</h2><h3 id="SpringBoot配置文件类型和作用"><a href="#SpringBoot配置文件类型和作用" class="headerlink" title="SpringBoot配置文件类型和作用"></a>SpringBoot配置文件类型和作用</h3><p>SpringBoot是基于约定的，所以很多配置都有默认值，但如果想使用自己的配置替换默认配置的话，就可以使用application.properties或者application.yml（application.yaml）进行配置。</p>
+<p>SpringBoot默认会从Resources目录下加载application.properties或application.yml（application.yaml）文件</p>
+<p>其中，application.properties文件是键值对类型的文件，之前一直在使用，所以此处不在对properties文件的格式进行阐述。除了properties文件外，SpringBoot还可以使用yml文件进行配置，下面对yml文件进行讲解。</p>
+<h3 id="application-yml配置文件"><a href="#application-yml配置文件" class="headerlink" title="application.yml配置文件"></a>application.yml配置文件</h3><p>YML文件格式是YAML (YAML Aint Markup Language)编写的文件格式，YAML是一种直观的能够被电脑识别的的数据数据序列化格式，并且容易被人类阅读，容易和脚本语言交互的，可以被支持YAML库的不同的编程语言程序导入，比如： C/C++, Ruby, Python, Java, Perl, C#, PHP等。YML文件是以数据为核心的，比传统的xml方式更加简洁。</p>
+<p>YML文件的扩展名可以使用.yml或者.yaml。</p>
+<p><strong>yml配置文件的语法</strong>:  </p>
+<blockquote>
+<p>1.配置普通数据  </p>
+</blockquote>
+<ul>
+<li><p>语法： key: value</p>
+</li>
+<li><p>示例代码：</p>
+</li>
+<li><pre><code class="yaml"><span class="attr">name:</span> <span class="string">haohao</span>
+<span class="string"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">- 注意：value之前有一个空格</span><br><span class="line"></span><br><span class="line">&gt; 2.配置对象数据</span><br><span class="line">- 语法： </span><br><span class="line"></span><br><span class="line">  ​	key: </span><br><span class="line"></span><br><span class="line">  ​		key1: value1</span><br><span class="line"></span><br><span class="line">  ​		key2: value2</span><br><span class="line"></span><br><span class="line">  ​	或者：</span><br><span class="line"></span><br><span class="line">  ​	key: &#123;key1: value1,key2: value2&#125;</span><br><span class="line"></span><br><span class="line">- 示例代码：</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;yaml</span><br><span class="line">  person:</span><br><span class="line">    name: haohao</span><br><span class="line">    age: 31</span><br><span class="line">    addr: beijing</span><br><span class="line"></span><br><span class="line">  #或者</span><br><span class="line"></span><br><span class="line">  person: &#123;name: haohao,age: 31,addr: beijing&#125;</span><br></pre></td></tr></table></figure></span></code></pre>
+</li>
+<li><p>注意：key1前面的空格个数不限定，在yml语法中，相同缩进代表同一个级别  </p>
+</li>
+</ul>
+<blockquote>
+<p>3.配置Map数据</p>
+</blockquote>
+<ul>
+<li>同上面的对象写法  </li>
+</ul>
+<blockquote>
+<p>4.配置数组（List、Set）数据</p>
+</blockquote>
+<ul>
+<li><p>语法： </p>
+<p>​    key: </p>
+<p>​        - value1</p>
+<p>​        - value2</p>
+<p>或者：</p>
+<p>​    key: [value1,value2]</p>
+</li>
+<li><p>示例代码：</p>
+</li>
+<li><pre><code class="yaml"><span class="attr">city:</span>
+  <span class="bullet">-</span> <span class="string">beijing</span>
+  <span class="bullet">-</span> <span class="string">tianjin</span>
+  <span class="bullet">-</span> <span class="string">shanghai</span>
+  <span class="bullet">-</span> <span class="string">chongqing</span>
+
+<span class="comment">#或者</span>
+
+<span class="attr">city:</span> <span class="string">[beijing,tianjin,shanghai,chongqing]</span>
+
+<span class="comment">#集合中的元素是对象形式</span>
+<span class="attr">student:</span>
+  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">zhangsan</span>
+    <span class="attr">age:</span> <span class="number">18</span>
+    <span class="attr">score:</span> <span class="number">100</span>
+  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">lisi</span>
+    <span class="attr">age:</span> <span class="number">28</span>
+    <span class="attr">score:</span> <span class="number">88</span>
+  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">wangwu</span>
+    <span class="attr">age:</span> <span class="number">38</span>
+    <span class="attr">score:</span> <span class="number">90</span>
+<span class="string"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">- 注意：value1与之间的 - 之间存在一个空格</span><br><span class="line"></span><br><span class="line">如下图：</span><br><span class="line">![](spring-boot-1\21.jpg) </span><br><span class="line">![](spring-boot-1\22.jpg) </span><br><span class="line"></span><br><span class="line">### 使用注解@Value映射</span><br><span class="line">我们可以通过@Value注解将配置文件中的值映射到一个Spring管理的Bean的字段上</span><br><span class="line"></span><br><span class="line">例如：</span><br><span class="line"></span><br><span class="line">application.properties配置如下：</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;properties</span><br><span class="line">person:</span><br><span class="line">  name: zhangsan</span><br><span class="line">  age: 18</span><br></pre></td></tr></table></figure></span>
+</code></pre>
+</li>
+</ul>
+<p>或者，application.yml配置如下：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">person:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">zhangsan</span></span><br><span class="line">  <span class="attr">age:</span> <span class="number">18</span></span><br></pre></td></tr></table></figure>
+
+<p>实体Bean代码如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuickStartController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;person.name&#125;"</span>)</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="meta">@Value</span>(<span class="string">"$&#123;person.age&#125;"</span>)</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"/quick"</span>)</span><br><span class="line">    <span class="meta">@ResponseBody</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">quick</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"springboot 访问成功! name="</span>+name+<span class="string">",age="</span>+age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如图:<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C23.jpg" alt><br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C24.jpg" alt></p>
+<h3 id="使用注解-ConfigurationProperties映射"><a href="#使用注解-ConfigurationProperties映射" class="headerlink" title="使用注解@ConfigurationProperties映射"></a>使用注解@ConfigurationProperties映射</h3><p>通过注解@ConfigurationProperties(prefix=”配置文件中的key的前缀”)可以将配置文件中的配置自动与实体进行映射</p>
+<p>yml配置如下:<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C25.jpg" alt><br>实体Bean代码如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"student"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QController2</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String age;</span><br><span class="line">    <span class="keyword">private</span> String addr;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(String age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getAddr</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> addr;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAddr</span><span class="params">(String addr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.addr = addr;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping</span>(<span class="string">"/quick2"</span>)</span><br><span class="line">    <span class="meta">@ResponseBody</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">quick1</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//获取配置信息</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">"name: "</span>+name+<span class="string">", age: "</span>+age+<span class="string">", addr: "</span>+addr;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>测试:<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C26.jpg" alt></p>
+<p>注意：使用@ConfigurationProperties方式可以进行配置文件与实体字段的自动映射，但需要字段必须提供set方法才可以，而使用@Value注解修饰的字段不需要提供set方法</p>
+<p>如果你的IDEA警告：<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C27.jpg" alt><br>进入页面复制<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C28.jpg" alt><br>进入xml文件中配置<br><img src="/2020/03/17/spring-boot-1/spring-boot-1%5C29.jpg" alt></p>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>spring boot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机数据结构复习</title>
+    <url>/2020/03/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><a id="more"></a>  
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2>]]></content>
+      <categories>
+        <category>计算机基础知识</category>
+      </categories>
+      <tags>
+        <tag>cs</tag>
+        <tag>基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机操作系统复习</title>
+    <url>/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><a id="more"></a>  
+
+<h2 id="操作系统引论"><a href="#操作系统引论" class="headerlink" title="操作系统引论"></a>操作系统引论</h2><p>操作系统OS是配置在计算机硬件上的第一层软件，是对硬件系统的首次扩充。  </p>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><ul>
+<li>作为用户与计算机硬件系统之间的接口  </li>
+<li>作为计算机系统资源的管理者  </li>
+<li>实现了对计算机资源的抽象  </li>
+</ul>
+<h3 id="基本特征"><a href="#基本特征" class="headerlink" title="基本特征"></a>基本特征</h3><p><strong>1.并发性</strong><br>引入进程：提高了系统资源的利用率和系统吞吐量，并改善了系统的性能。<br>引入线程：对它的调度所付出的开销比进程小得多，能更高效地提高系统内多个程序间并发执行的程度。  </p>
+<p><strong>2.共享性</strong><br>互斥共享方式：在一段时间内只允许一个进程访问的资源称为临界资源或独占资源。<br>同时访问方式：允许在一段时间内由多个进程同时对它们进行访问。  </p>
+<p><strong>3.虚拟技术</strong><br>时分复用技术：利用处理机的空闲时间运行其他程序，提高处理机的利用率。<br>空分复用技术：利用存储器的空闲空间存放其他程序，提高内存的利用率。   </p>
+<p><strong>4.异步性</strong><br>进程以不可预知的速度向前推进  </p>
+<h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>1.程序的顺序执行：<br>按照某种先后次序顺序执行，仅当前一程序执行完后，才能执行后继操作。<br>特征：顺序性、封闭性、可再现性。<br><strong>前驱图</strong>：描述进程之间执行的前后关系。 </p>
+<p>2.程序的并发执行：<br>特征：间断性、失去封闭性、不可再现性  </p>
+<p><strong>进程实体</strong>：由程序段、相关的数据段和PCB组成，所谓创建和撤销进程实际是对其中的PCB的创建和撤销。（PCB：进程控制块Process Control Block）<br><strong>进程的特征</strong>：动态性、并发性、独立性、异步性<br><strong>进程定义</strong>：是进程实体的运行过程，是系统进行资源分配和调度的一个独立单元。 </p>
+<p>进程的<strong>三种基本状态</strong>：就绪状态、执行状态、阻塞状态（阻塞典型事件：请求I/O，申请缓冲空间等）。<br>进程的三种基本状态及其<strong>转换图</strong>:<br><img src="/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%5C1.jpg" alt>   </p>
+<p><strong>挂起状态</strong>：进程处于静止状态，暂停执行（执行状态下挂起），暂不接受调度（就绪状态下挂起）。<br>进程的五种基本状态及其转换图。<br><img src="/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%5C2.png" alt>   </p>
+<p>具有创建、终止和挂起状态的<strong>进程状态图</strong>：<br><img src="/2020/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%5C3.jpg" alt>  </p>
+<h3 id="进程控制"><a href="#进程控制" class="headerlink" title="进程控制"></a>进程控制</h3><p>为作业创建进程，撤销已结束的进程，控制进程在运行过程中的状态转换。  </p>
+<h3 id="进程同步"><a href="#进程同步" class="headerlink" title="进程同步"></a>进程同步</h3><p>由于操作系统中的进程运行具有异步的特征，因此需要对进程进行同步，协调多个进程的运行。  </p>
+<h3 id="进程通信"><a href="#进程通信" class="headerlink" title="进程通信"></a>进程通信</h3><p>实现相互合作的进程之间的信息交换。同一计算机系统上的进程之间是源进程发送命令，直接将消息挂载到目标进程的消息队列中，目标进程利用接受命令从消息队列中取消息。</p>
+<h3 id="调度"><a href="#调度" class="headerlink" title="调度"></a>调度</h3><p>分为作业调度和进程调度。二者分别是调度过程的两步。  </p>
+<ul>
+<li>第一步，作业调度就是按照一定的调度算法将作业调入内存，并为之创建进程，并将进程放入就绪队列中。  </li>
+<li>第二步，进程调度是将就绪队列中的进程按照一定的算法取出并分配cpu资源，使之处于运行态。  </li>
+</ul>
+<h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><p>线程与进程的比较<br><strong>①调度</strong><br>线程是独立调度的基本单位，在同一进程中，线程的切换不会引起进程切换，从一个进程中的线程切换到另一个进程中的线程时，会引起进程切换。  </p>
+<p><strong>②并发性</strong><br>不仅进程之间可以并发执行，而且在一个进程中的多个线程之间亦可并发执行。  </p>
+<p><strong>③拥有资源</strong><br>进程都可以拥有资源，是系统中拥有资源的一个基本单位。一般而言，线程自己不拥有系统资源(也有一点必不可少的资源)，但它可以访问其隶属进程的资源。  </p>
+<p><strong>④系统开销</strong><br>由于创建或撤销进程时，系统都要为之分配或回收资源，如内存空间、I/O 设备等，所付出的开销远大于创建或撤销线程时的开销。类似地，在进行进程切换时，涉及当前执行进程 CPU 环境的保存及新调度进程 CPU 环境的设置，而线程切换时只需保存和设置少量寄存器内容，开销很小。  </p>
+<h2 id="处理机调度与死锁"><a href="#处理机调度与死锁" class="headerlink" title="处理机调度与死锁"></a>处理机调度与死锁</h2>]]></content>
+      <categories>
+        <category>计算机基础知识</category>
+      </categories>
+      <tags>
+        <tag>cs</tag>
+        <tag>基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机网络原理复习</title>
+    <url>/2020/03/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="计算机网络原理"><a href="#计算机网络原理" class="headerlink" title="计算机网络原理"></a>计算机网络原理</h1><a id="more"></a>
+
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>1.<strong>计算机网络</strong>(网络)把许多<strong>计算机</strong>连接在一起，而<strong>互联网</strong>则把许多网络连接在一起是<strong>网络的网络</strong>。<strong>因特尔</strong>是世界上最大的互联网。</p>
+<p>2.以大写字母I开始的Interent（<strong>因特网</strong>）是<strong>专有</strong>名词，它指当前全球最大的、开放的、由众多网络相互连接而成的特定计算机网络，它采用的是<strong>TCP/IP</strong>协议族 作为通信规则，且其前身是美国的ARPANET。  </p>
+<p>3.以小写字母i开始的internet(<strong>互联网或互连网</strong>)是<strong>通用</strong>名词，它泛指由多个计算机网络互连而成的网络。在这些网络之间的通信协议（通信规则）可以是<strong>任意</strong>的。  </p>
+<p>4.按作用<strong>范围</strong>不同，计算机网络分为：广域网WAN,城域网MAN，局域网LAN和个人区域网PAN。  </p>
+<p>5.网络协议主要由三个要素组成：<br>（1）<strong>语法</strong>：即数据和控制信息的结构或者格式；<br>（2）<strong>语义</strong>：即需要发出何种控制信息，完成何种动作以及做出何种响应。<br>（3）<strong>同步</strong>：即事件实现顺序的详细说明。</p>
+<p>6.<strong>五层协议</strong>的体系结构由：<strong>应用层，运输层，网络层，数据链路层和物理层</strong>。  </p>
+<p>7.运输层最重要的协议是：传输控制协议<strong>TCP</strong>和用户数据报协议<strong>UDP</strong>，而网络层最重要的协议是网络协议<strong>IP</strong>。  </p>
+<p><img src="/2020/03/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/1.jpg" alt>  </p>
+<h1 id="五层协议"><a href="#五层协议" class="headerlink" title="五层协议"></a>五层协议</h1><p>简要分析:<br><img src="/2020/03/13/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/2.jpg" alt></p>
+<h2 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h2><p>1.物理层的主要任务：描述为确定与<strong>传输媒体</strong>的接口有关的一些特性。</p>
+<p><strong>(1)机械特性</strong>：接口所用接线器的形状和尺寸，引脚数目和排列，固定和锁定装置等，平时常见的各种规格的插件都有严格的标准化的规定。  </p>
+<p><strong>(2)电气特性</strong>：接口电缆上的各条线上出现的电压范围。  </p>
+<p><strong>(3)功能特性</strong>：某条线上出现的某一电平的点电压表示何种意义；   </p>
+<p><strong>(4)过程特性</strong>：指明对不同功能的各种可能事件的出现顺序。  </p>
+<p>2.通信的双方信息交互的方式来看，有三中基本方式：<br>单向通信（广播）<br>双向交替通信（<strong>半双工</strong>_对讲机）<br>双向同时通信（全双工 _电话）  </p>
+<p>3.编码方式：  </p>
+<ul>
+<li><strong>不归零制</strong>（正电平1/负0）  </li>
+<li><strong>归零制度</strong>（正脉冲1/负0）  </li>
+<li><strong>曼彻斯特编码</strong>（位周期中心的向上跳变为0/下1）  </li>
+<li><strong>差分曼彻斯特编码</strong>（每一位中心处有跳变，开始辩解有跳变为0，无跳变1）  </li>
+</ul>
+<p>4.物理层下面的<strong>传输媒体（介质）</strong>：不属于任何一层。包括有：<br><strong>引导性传输媒体</strong>：双绞、同轴电缆、光缆<br><strong>非引导性传输媒体</strong>：短波、微波、红外线  </p>
+<p>5.信道复用技术：<br><strong>频分复用</strong>：（一样的时间占有不不同资源）<br><strong>时分复用</strong>：（不同时间使用同样资源）<br>统计时分复用、波分复用（WDM）、码分复用（CDM）  </p>
+<p>6.物理层故障：连接问题  </p>
+<h2 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h2><p><strong>数据链路层</strong>最基本的服务是将源计算机网络层来的数据可靠的传输到相邻节点的目标计算机的网络层。  </p>
+<p>1.点对点信道（ppp）的数据链路层的协议数据单元–<strong>帧</strong>  </p>
+<p>2.数据链路层协议有许多，三个基本问题是共同的<br><strong>封装成帧</strong><br><strong>透明传输</strong><br><strong>差错检测</strong>  </p>
+<p>3.局域网的数据链路层拆成两个子层，即<strong>逻辑链路层（LLC）</strong>子层+<strong>媒体接入控制（MAC）</strong>子层  </p>
+<p>4.以太网采用的协议是：具有<strong>冲突检测</strong>的<strong>载波监听多点接入(CSMA/CD)</strong>。协议的要点是：<strong>发送前先监听，边发送边监听，一旦发现总线出现了碰撞，就立即停止发送</strong>。  </p>
+<p>5.使用<strong>集线器</strong>可以在<strong>物理层</strong>扩展以太网（半双工），使用<strong>网桥</strong>可以在<strong>数据链路层</strong>扩展以太网（半双工），网桥转发帧时，不改变帧的源地址。网桥优点：对帧进行转发过滤，增大吞吐量。扩大网络物理范围，提高可靠性，可互连不同物理层，不同MAC子层和不同速率的以太网。 网桥缺点：增加时延，可能产生广播风暴。  </p>
+<p>6.数据链路层故障：  </p>
+<ul>
+<li>MAC地址冲突导致不能上网  </li>
+<li>交换机与计算机的网卡带宽协商不一致，网速不一致导致通不了。  </li>
+<li>ADSL欠费导致不通。  </li>
+<li>将计算机连接到错误的VLAN。 </li>
+</ul>
+<h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h2><p>1.<strong>TCP/IP</strong>体系中的网络层向上只提供简单灵活的、无连接，尽最大努力交付的数据报服务。网络层不提供服务质量的承诺，不保证分组交付的时限，<strong>进程</strong>之间的通信的<strong>可靠性</strong>由<strong>运输层</strong>负责。  </p>
+<p>2.一个<strong>IP地址</strong>在整个因特网范围内是唯一的，分类的IP地址包括<strong>A类（1~126）</strong>、<strong>B类（128~191）</strong>、<strong>C类（192~223单播地址）</strong>、<strong>D类（多播地址）</strong>。  </p>
+<p>3.分类的IP地址由<strong>网络号字段</strong>和<strong>主机号字段</strong>组成。  </p>
+<p>4.地址解析协议<strong>ARP（Address Resolution Protocol）</strong>把IP地址解析为<strong>硬件地址</strong>，它解决<strong>同一个局域网的主机或路由器的IP地址和硬件地址的映射问题</strong>，是一种解决地址问题的协议。以目标IP地址为线索，用来定位一个下一个应该接收数据分包的网络设备对应的MAC地址。如果目标主机不再同一链路上时，可以通过ARP查找下一跳路由器的MAC地址，不过ARP只适用于IPV4，不能用于IPV6，IPV6中可以用ICMPV6替代ARP发送邻居搜索消息。  </p>
+<p>5.路由选择协议有两大类：<strong>内部网关协议</strong>（RIP和OSPE）和<strong>外部网关协议</strong>（BGP-4）。  </p>
+<p>6.网际控制报文协议<strong>ICMP</strong>（Internet Control Message Protocol ）控制报文协议。是IP层协议，ICMP报文作为IP数据报的数据，加上首部后组成IP数据报发送出去，使用ICMP并不是实现了可靠传输。ICMP允许主机或者路由器<strong>报告差错</strong>情况和<strong>提供有关异常</strong>的情况报告。  </p>
+<p>网络层上是ip地址的计算  </p>
+<h2 id="运输层"><a href="#运输层" class="headerlink" title="运输层"></a>运输层</h2><p>1.运输层有两个协议<strong>TCP</strong>和<strong>UDP</strong>  </p>
+<p>2.<strong>UDP特点</strong>：无连接、尽最大努力交付、面向报文、无拥塞控制、支持一对一，多对一，一对多，多对多的交互通信。首部开销小。  </p>
+<p>3.<strong>TCP特点</strong>：面向连接，每一条TCP连接只能是点对点、提供可靠的交付服务，提供全双工通信、面向字节流。  </p>
+<p>4.TCP拥塞控制采用四种算法：<strong>慢开始、拥塞避免、快重传、快恢复</strong>。  </p>
+<p>5.传输有<strong>三个连接</strong>：连接建立、数据传送、连接释放。  </p>
+<p>6.TCP连接<strong>建立</strong>采用<strong>三次</strong>握手机制，连接<strong>释放</strong>采用<strong>四次</strong>握手机制。  </p>
+<h2 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h2><p>1.<strong>文件传送协议FTP</strong>使用<strong>TCP</strong>可靠传输服务。FTP使用客户服务器方式，一个FTP服务器进程可同时为多个客户进程提供服务。在进行文件传输时，FTP的客户和服务器之间要建立两个并行的TCP连接，控制连接和数据连接，实际用于传输文件的是<strong>数据连接</strong>。  </p>
+<p>2.万维网使用<strong>统一资源定位符URL</strong>来标志万维网上的各种文档，并使每一个文档在整个因特网的范围内具有唯一的标识符<strong>URL</strong>。</p>
+<p>参考：<a href="https://blog.csdn.net/qq_35260622/article/details/51672296" target="_blank" rel="noopener">https://blog.csdn.net/qq_35260622/article/details/51672296</a></p>
+]]></content>
+      <categories>
+        <category>计算机基础知识</category>
+      </categories>
+      <tags>
+        <tag>cs</tag>
+        <tag>基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机组成原理复习</title>
     <url>/2020/03/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="计算机组成原理"><a href="#计算机组成原理" class="headerlink" title="计算机组成原理"></a>计算机组成原理</h1><a id="more"></a>
@@ -12,7 +305,29 @@
 <hr>
 <p>在计算机中，最适合数字<strong>加减运算</strong>的数字编码是<strong>补码</strong>，最适合表示<strong>浮点数阶码</strong>的数字编码是<strong>移码</strong>。</p>
 <p>例如：</p>
-<p><img src="/2020/03/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/1.jpg" alt="原码和补码">  </p>
+<p><img src="/2020/03/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/1.jpg" alt="原码和补码"> </p>
+<h2 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h2><p><img src="/2020/03/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/2.jpg" alt="cpu"> </p>
+<h3 id="1运算器"><a href="#1运算器" class="headerlink" title="1运算器"></a>1运算器</h3><p>1.算术逻辑单元<br>2.累加寄存器<br>3.数据缓冲寄存器<br>4.状态条件寄存器</p>
+<h3 id="2控制器"><a href="#2控制器" class="headerlink" title="2控制器"></a>2控制器</h3><ul>
+<li>不仅要保证程序的正确执行，而且要能够处理异常事件</li>
+</ul>
+<p>1.程序计数器<br>2.指令寄存器<br>3.指令编译器<br>4.时序部件</p>
+<h3 id="3寄存器"><a href="#3寄存器" class="headerlink" title="3寄存器"></a>3寄存器</h3><h3 id="4内部总线"><a href="#4内部总线" class="headerlink" title="4内部总线"></a>4内部总线</h3><h2 id="计算机体系结构分类"><a href="#计算机体系结构分类" class="headerlink" title="计算机体系结构分类"></a>计算机体系结构分类</h2><p>1.单指令流单数据流  <strong>SISD</strong><br>2.单指令流多数据流  <strong>SIMD</strong><br>3.多指令流单数据流  <strong>MISD</strong><br>4.多指令流多数据流  <strong>MIMD</strong>  </p>
+<h2 id="指令系统类型"><a href="#指令系统类型" class="headerlink" title="指令系统类型"></a>指令系统类型</h2><p>1.CISC（复杂）<br>指令数量多，使用频率差别大，可变长格式<br>2.RISC （精简）<br>指令数量少，寻址方式少，有效支持高级语言  </p>
+<h2 id="流水线"><a href="#流水线" class="headerlink" title="流水线"></a>流水线</h2><p><img src="/2020/03/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/3.jpg" alt="cpu"> </p>
+<h2 id="主存分类"><a href="#主存分类" class="headerlink" title="主存分类"></a>主存分类</h2><h3 id="随机存取存储器"><a href="#随机存取存储器" class="headerlink" title="随机存取存储器"></a>随机存取存储器</h3><ul>
+<li>DRAM：动态RAM  </li>
+<li>SRAM：静态RAM<h3 id="只读存储器"><a href="#只读存储器" class="headerlink" title="只读存储器"></a>只读存储器</h3></li>
+<li>MROM  </li>
+<li>PROM  </li>
+<li>EPROM  </li>
+<li>闪速存储器：闪存  </li>
+</ul>
+<h2 id="校验码"><a href="#校验码" class="headerlink" title="校验码"></a>校验码</h2><h3 id="循环冗余校验码CRC"><a href="#循环冗余校验码CRC" class="headerlink" title="循环冗余校验码CRC"></a>循环冗余校验码CRC</h3><blockquote>
+<p>模2除法：是指在做除法运算的过程中不计其进位的除法  </p>
+</blockquote>
+<p><img src="/2020/03/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/4.jpg" alt="cpu"> </p>
+<h3 id="海明校验码"><a href="#海明校验码" class="headerlink" title="海明校验码"></a>海明校验码</h3><p><img src="/2020/03/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%A4%8D%E4%B9%A0/5.jpg" alt="cpu"> </p>
 ]]></content>
       <categories>
         <category>计算机基础知识</category>
@@ -20,6 +335,7 @@
       <tags>
         <tag>cs</tag>
         <tag>基础</tag>
+        <tag>计组</tag>
       </tags>
   </entry>
   <entry>
@@ -84,9 +400,20 @@
 <p><strong>参数1</strong>:轨迹条的名字<br><strong>参数2</strong>：表示轨迹条会依附到哪个窗口上，应该用namedWindow()函数创建某个窗口<br><strong>参数3</strong>：表示滑块的位置，在初始时应是该变量当前的值<br><strong>参数4</strong>：最大值位置，最小值始终为0<br><strong>参数5</strong>：这是一个回调函数，<strong>很有用</strong><br><strong>参数6</strong>：不介绍  </p>
 <p>利用createTrackbar()函数实例:<br>效果：<br><img src="/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/14.jpg" alt="效果"><br><img src="/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/15.jpg" alt="效果"><br><img src="/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/16.jpg" alt="效果"><br>代码如下: </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#if 1</span><br><span class="line"></span><br><span class="line">#include &quot;opencv2&#x2F;opencv.hpp&quot;</span><br><span class="line">#include&quot;iostream&quot;</span><br><span class="line">using namespace cv;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;变量</span><br><span class="line">double g_A_v;</span><br><span class="line">double g_B_v;</span><br><span class="line">int g_value_control;</span><br><span class="line">const int g_value &#x3D; 100;</span><br><span class="line">Mat img0;</span><br><span class="line">Mat img1;</span><br><span class="line">Mat imgd;</span><br><span class="line"></span><br><span class="line">void on_Trackbar(int, void *)</span><br><span class="line">&#123;</span><br><span class="line">	&#x2F;&#x2F;求出当前alpha的值相对于最大值的比例</span><br><span class="line">	g_A_v &#x3D; (double)g_value_control &#x2F; g_value;</span><br><span class="line">	&#x2F;&#x2F;则beta值为1减去alpha的值</span><br><span class="line">	g_B_v &#x3D; (1.0 - g_A_v);</span><br><span class="line"></span><br><span class="line">	&#x2F;&#x2F;根据alpha和beta值进行线性混合</span><br><span class="line">	addWeighted(img0, g_A_v, img1, g_B_v, 0.0, imgd);</span><br><span class="line"></span><br><span class="line">	&#x2F;&#x2F;显示效果图</span><br><span class="line">	imshow(&quot;createTrackbar()函数实例&quot;, imgd);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	&#x2F;&#x2F;载入图片,判断!</span><br><span class="line">	img0 &#x3D; imread(&quot;gays.jpg&quot;);</span><br><span class="line">	img1 &#x3D; imread(&quot;gays1.jpg&quot;);</span><br><span class="line">	if (!img0.data) &#123;</span><br><span class="line">		cout &lt;&lt; &quot;读取第一个图片失败!&quot; &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	if (!img1.data) &#123;</span><br><span class="line">		cout &lt;&lt; &quot;读取第二个图片失败!&quot; &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	&#x2F;&#x2F;设置滑动条的初始值</span><br><span class="line">	g_value_control &#x3D; 70;</span><br><span class="line"></span><br><span class="line">	&#x2F;&#x2F;创建窗体</span><br><span class="line">	namedWindow(&quot;createTrackbar()函数实例&quot;, 1);</span><br><span class="line"></span><br><span class="line">	&#x2F;&#x2F;在创建的窗体中创建一个滑动条控件</span><br><span class="line">	char Trackbarname[50];</span><br><span class="line">	&#x2F;&#x2F;格式化输入</span><br><span class="line">	sprintf(Trackbarname, &quot;透明值 %d&quot;, g_value_control);</span><br><span class="line"></span><br><span class="line">	createTrackbar(Trackbarname, &quot;createTrackbar()函数实例&quot;, &amp;g_value_control, g_value, on_Trackbar);</span><br><span class="line"></span><br><span class="line">	&#x2F;&#x2F;结果在回调函数中显示</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	waitKey(0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
+<h2 id="鼠标操作"><a href="#鼠标操作" class="headerlink" title="鼠标操作"></a>鼠标操作</h2><p>1.SetMouseCallback() 函数</p>
+<p>函数原型： </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">void setMouseCallback(const string &amp; winname,MouseCallback onMouse,void* userdata&#x3D;0)</span><br></pre></td></tr></table></figure>
+<p><strong>参数1</strong>：窗口的名字，字符串型<br><strong>参数2</strong>：MouseCallback类型的onMouse，指定窗口里每次鼠标事件发生的时候，被调用的函数指针。<br><strong>参数3</strong>：定义的传递到回调函数的参数，默认值0。  </p>
+<p>实例：<br>运行之后如图:<br><img src="/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/17.jpg" alt="效果"></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;头文件</span><br><span class="line">#include &quot;opencv2&#x2F;opencv.hpp&quot;</span><br><span class="line">using namespace cv;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;定义窗口标题的宏</span><br><span class="line">#define WINDOW_NAME &quot;【程序窗口】&quot;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;全局变量的声明</span><br><span class="line">Rect g_rectangle;</span><br><span class="line">bool g_d&#x3D;false;		&#x2F;&#x2F;是否进行绘制</span><br><span class="line">RNG g_rng(12345);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;矩形绘制函数DrawRectangle()函数</span><br><span class="line">void DrawRectangle(Mat &amp; img,Rect box)</span><br><span class="line">&#123;</span><br><span class="line">	&#x2F;&#x2F;随机颜色</span><br><span class="line">	rectangle(img, box.tl(), box.br(), Scalar(g_rng.uniform(0, 255), g_rng.uniform(0, 255), g_rng.uniform(0, 255)));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;鼠标回调函数 on_MouseHeandle()函数</span><br><span class="line">void on_MouseHandle(int event, int x, int y, int flags, void * param)</span><br><span class="line">&#123;</span><br><span class="line">	Mat &amp; image &#x3D; *(Mat*)param;</span><br><span class="line">	switch (event)</span><br><span class="line">	&#123;</span><br><span class="line">		&#x2F;&#x2F;鼠标移动消息</span><br><span class="line">	case EVENT_MOUSEMOVE:</span><br><span class="line">	&#123;</span><br><span class="line">		if (g_d) &#123;	&#x2F;&#x2F;如果是否进行绘制的标识符为真，则记录下长和宽到Rrectangle</span><br><span class="line">			g_rectangle.width &#x3D; x - g_rectangle.x;</span><br><span class="line">			g_rectangle.height &#x3D; y - g_rectangle.y;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	break;</span><br><span class="line">	&#x2F;&#x2F;左键按下消息</span><br><span class="line">	case EVENT_LBUTTONDOWN:</span><br><span class="line">	&#123;</span><br><span class="line">		g_d &#x3D; true;</span><br><span class="line">		g_rectangle &#x3D; Rect(x, y, 0, 0);	&#x2F;&#x2F;记录起始点</span><br><span class="line">	&#125;</span><br><span class="line">	break;</span><br><span class="line"></span><br><span class="line">	&#x2F;&#x2F;左键抬起消息</span><br><span class="line">	case EVENT_LBUTTONUP:</span><br><span class="line">	&#123;</span><br><span class="line">		g_d &#x3D; false;&#x2F;&#x2F;标识符为false</span><br><span class="line">		&#x2F;&#x2F;对宽和高小于0的处理</span><br><span class="line">		if (g_rectangle.width &lt; 0)</span><br><span class="line">		&#123;</span><br><span class="line">			g_rectangle.x +&#x3D; g_rectangle.width;</span><br><span class="line">			g_rectangle.width *&#x3D; -1;</span><br><span class="line">		&#125;</span><br><span class="line">		if (g_rectangle.height &lt; 0)</span><br><span class="line">		&#123;</span><br><span class="line">			g_rectangle.y +&#x3D; g_rectangle.height;</span><br><span class="line">			g_rectangle.height *&#x3D; -1;</span><br><span class="line">		&#125;</span><br><span class="line">		&#x2F;&#x2F;调用函数进行绘制</span><br><span class="line">		DrawRectangle(image, g_rectangle);</span><br><span class="line">	&#125;</span><br><span class="line">	break;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;main函数</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	&#x2F;&#x2F;准备参数</span><br><span class="line">	g_rectangle &#x3D; Rect(-1, -1, 0, 0);</span><br><span class="line">	Mat srcImage(600, 800, CV_8UC3), tempImage;</span><br><span class="line">	srcImage.copyTo(tempImage);</span><br><span class="line">	g_rectangle &#x3D; Rect(-1, -1, 0, 0);</span><br><span class="line">	srcImage &#x3D; Scalar::all(0);</span><br><span class="line"></span><br><span class="line">	&#x2F;&#x2F;设置鼠标操作回调函数</span><br><span class="line">	namedWindow(WINDOW_NAME);</span><br><span class="line">	setMouseCallback(WINDOW_NAME, on_MouseHandle, (void*)&amp; srcImage);</span><br><span class="line"></span><br><span class="line">	&#x2F;&#x2F;程序主循环，当进行绘制的标识符为真时，进行绘制</span><br><span class="line">	while (1)</span><br><span class="line">	&#123;</span><br><span class="line">		srcImage.copyTo(tempImage);&#x2F;&#x2F;复制原图到临时变量</span><br><span class="line">		if (g_d) &#123;</span><br><span class="line">			&#x2F;&#x2F;当进行绘制的标识符为真的时候，进行绘制</span><br><span class="line">			DrawRectangle(tempImage, g_rectangle);</span><br><span class="line">		&#125;</span><br><span class="line">		imshow(WINDOW_NAME, tempImage);</span><br><span class="line">		if (waitKey(10)&#x3D;&#x3D;27)</span><br><span class="line">		&#123;&#x2F;&#x2F;按下ESC键，程序退出</span><br><span class="line">			break;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
+<h1 id="HighGUI图像的初步基本函数总结"><a href="#HighGUI图像的初步基本函数总结" class="headerlink" title="HighGUI图像的初步基本函数总结"></a>HighGUI图像的初步基本函数总结</h1><h2 id="imread-函数"><a href="#imread-函数" class="headerlink" title="imread 函数"></a>imread 函数</h2><p>读取文件中的图片到OpenCV中</p>
+<h2 id="imshow-函数"><a href="#imshow-函数" class="headerlink" title="imshow 函数"></a>imshow 函数</h2><p>指定一个窗口显示一幅图像</p>
+<h2 id="namedWindow-函数"><a href="#namedWindow-函数" class="headerlink" title="namedWindow 函数"></a>namedWindow 函数</h2><p>创建一个窗口</p>
+<h2 id="imwrite-函数"><a href="#imwrite-函数" class="headerlink" title="imwrite 函数"></a>imwrite 函数</h2><p>输出图像到文件</p>
+<h2 id="createTrackbar-函数"><a href="#createTrackbar-函数" class="headerlink" title="createTrackbar 函数"></a>createTrackbar 函数</h2><p>创建一个可以用于调整数值的轨迹条</p>
+<h2 id="getTrackbarPos-函数"><a href="#getTrackbarPos-函数" class="headerlink" title="getTrackbarPos 函数"></a>getTrackbarPos 函数</h2><p>获取轨迹条的当前位置</p>
+<h2 id="setMouseCallback-函数"><a href="#setMouseCallback-函数" class="headerlink" title="setMouseCallback 函数"></a>setMouseCallback 函数</h2><p>指定的窗口设置鼠标的回调函数</p>
 ]]></content>
       <categories>
         <category>OpenCv</category>
