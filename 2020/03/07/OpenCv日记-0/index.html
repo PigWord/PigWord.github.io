@@ -86,12 +86,12 @@
 
 
 
-<meta name="description" content="OpenCv日记&lt;1&gt;">
+<meta name="description" content="OpenCv日记&lt;0&gt;OpenCV基础和基本显示函数">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenCv日记-0">
 <meta property="og:url" content="https://pigword.github.io/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/index.html">
 <meta property="og:site_name" content="Pigword记录">
-<meta property="og:description" content="OpenCv日记&lt;1&gt;">
+<meta property="og:description" content="OpenCv日记&lt;0&gt;OpenCV基础和基本显示函数">
 <meta property="og:image" content="https://pigword.github.io/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/1.jpg">
 <meta property="og:image" content="https://pigword.github.io/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/2.jpg">
 <meta property="og:image" content="https://pigword.github.io/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/3.jpg">
@@ -109,7 +109,7 @@
 <meta property="og:image" content="https://pigword.github.io/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/16.jpg">
 <meta property="og:image" content="https://pigword.github.io/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/17.jpg">
 <meta property="article:published_time" content="2020-03-07T14:19:13.000Z">
-<meta property="article:modified_time" content="2020-03-24T11:51:41.012Z">
+<meta property="article:modified_time" content="2020-03-26T03:26:29.878Z">
 <meta property="article:author" content="GQ">
 <meta property="article:tag" content="OpenCv">
 <meta property="article:tag" content="C++">
@@ -405,7 +405,8 @@
       
 
       
-        <h1 id="OpenCv日记-lt-1-gt"><a href="#OpenCv日记-lt-1-gt" class="headerlink" title="OpenCv日记&lt;1&gt;"></a>OpenCv日记&lt;1&gt;</h1><a id="more"></a>
+        <h1 id="OpenCv日记-lt-0-gt"><a href="#OpenCv日记-lt-0-gt" class="headerlink" title="OpenCv日记&lt;0&gt;"></a>OpenCv日记&lt;0&gt;</h1><p>OpenCV基础和基本显示函数</p>
+<a id="more"></a>
 <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p><strong>OpenCv</strong>是开源的计算机视觉库。考研时买了一本《OpenCv3编程入门》自学了一段时间，对其中的图像处理和计算机视觉相关知识有了一定的认识。不过现在要重新进行学习和认识，参考的书依旧是这本《OpenCv3编程入门》，我会把我在Opencv上所学的知识在博客中进行记录。OpenCv概念什么的不在阐述。</p>
 <h2 id="OpenCv安装和环境配置"><a href="#OpenCv安装和环境配置" class="headerlink" title="OpenCv安装和环境配置"></a>OpenCv安装和环境配置</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><ul>
 <li>首先在官网上下载OpenCV SDK<br><img src="/2020/03/07/OpenCv%E6%97%A5%E8%AE%B0-0/1.jpg" alt="下载">  </li>
@@ -624,7 +625,7 @@ var jiathis_config={
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -635,7 +636,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -646,7 +647,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -695,7 +696,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenCv日记-lt-1-gt"><span class="nav-number">1.</span> <span class="nav-text">OpenCv日记&lt;1&gt;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">1.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OpenCv安装和环境配置"><span class="nav-number">1.2.</span> <span class="nav-text">OpenCv安装和环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装"><span class="nav-number">1.2.1.</span> <span class="nav-text">下载安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境配置"><span class="nav-number">1.2.2.</span> <span class="nav-text">环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Visual-Studio"><span class="nav-number">1.2.3.</span> <span class="nav-text">配置Visual Studio</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装CMake"><span class="nav-number">1.3.</span> <span class="nav-text">安装CMake</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HighGUI模块"><span class="nav-number">1.4.</span> <span class="nav-text">HighGUI模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图像载入显示"><span class="nav-number">1.4.1.</span> <span class="nav-text">图像载入显示:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#滑动条的创建和使用"><span class="nav-number">1.4.2.</span> <span class="nav-text">滑动条的创建和使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#鼠标操作"><span class="nav-number">1.5.</span> <span class="nav-text">鼠标操作</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HighGUI图像的初步基本函数总结"><span class="nav-number">2.</span> <span class="nav-text">HighGUI图像的初步基本函数总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#imread-函数"><span class="nav-number">2.1.</span> <span class="nav-text">imread 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#imshow-函数"><span class="nav-number">2.2.</span> <span class="nav-text">imshow 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#namedWindow-函数"><span class="nav-number">2.3.</span> <span class="nav-text">namedWindow 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#imwrite-函数"><span class="nav-number">2.4.</span> <span class="nav-text">imwrite 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#createTrackbar-函数"><span class="nav-number">2.5.</span> <span class="nav-text">createTrackbar 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getTrackbarPos-函数"><span class="nav-number">2.6.</span> <span class="nav-text">getTrackbarPos 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setMouseCallback-函数"><span class="nav-number">2.7.</span> <span class="nav-text">setMouseCallback 函数</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenCv日记-lt-0-gt"><span class="nav-number">1.</span> <span class="nav-text">OpenCv日记&lt;0&gt;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">1.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OpenCv安装和环境配置"><span class="nav-number">1.2.</span> <span class="nav-text">OpenCv安装和环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装"><span class="nav-number">1.2.1.</span> <span class="nav-text">下载安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境配置"><span class="nav-number">1.2.2.</span> <span class="nav-text">环境配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Visual-Studio"><span class="nav-number">1.2.3.</span> <span class="nav-text">配置Visual Studio</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装CMake"><span class="nav-number">1.3.</span> <span class="nav-text">安装CMake</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HighGUI模块"><span class="nav-number">1.4.</span> <span class="nav-text">HighGUI模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图像载入显示"><span class="nav-number">1.4.1.</span> <span class="nav-text">图像载入显示:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#滑动条的创建和使用"><span class="nav-number">1.4.2.</span> <span class="nav-text">滑动条的创建和使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#鼠标操作"><span class="nav-number">1.5.</span> <span class="nav-text">鼠标操作</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HighGUI图像的初步基本函数总结"><span class="nav-number">2.</span> <span class="nav-text">HighGUI图像的初步基本函数总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#imread-函数"><span class="nav-number">2.1.</span> <span class="nav-text">imread 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#imshow-函数"><span class="nav-number">2.2.</span> <span class="nav-text">imshow 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#namedWindow-函数"><span class="nav-number">2.3.</span> <span class="nav-text">namedWindow 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#imwrite-函数"><span class="nav-number">2.4.</span> <span class="nav-text">imwrite 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#createTrackbar-函数"><span class="nav-number">2.5.</span> <span class="nav-text">createTrackbar 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getTrackbarPos-函数"><span class="nav-number">2.6.</span> <span class="nav-text">getTrackbarPos 函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setMouseCallback-函数"><span class="nav-number">2.7.</span> <span class="nav-text">setMouseCallback 函数</span></a></li></ol></li></ol></div>
             
 
           </div>
