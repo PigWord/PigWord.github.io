@@ -1,6 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>springboot-bbs1</title>
+    <url>/2020/04/30/springboot-bbs1/</url>
+    <content><![CDATA[<h1 id="SpringBoot论坛-lt-1-gt"><a href="#SpringBoot论坛-lt-1-gt" class="headerlink" title="SpringBoot论坛&lt;1&gt;"></a>SpringBoot论坛&lt;1&gt;</h1><a id="more"></a>
+<h2 id="回顾"><a href="#回顾" class="headerlink" title="回顾"></a>回顾</h2><p>上一次我们把登录的github权限给做了，得到了自己的github登录。并且对于项目中的导航条前端方面用到了bootstrap框架，接下来我们将对页面和数据库方面进行编写。  </p>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><ul>
+<li>在application文件中编写以下环境<br><img src="/2020/04/30/springboot-bbs1/1.jpg" alt></li>
+<li>里面的参数都为之前AuthorizeController类中配置的固定参数<br><img src="/2020/04/30/springboot-bbs1/2.jpg" alt>  </li>
+<li>对AuthorizeController类进行修改<br><img src="/2020/04/30/springboot-bbs1/3.jpg" alt></li>
+<li>运行后<br><img src="/2020/04/30/springboot-bbs1/4.jpg" alt><br><img src="/2020/04/30/springboot-bbs1/5.jpg" alt>  </li>
+</ul>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>spring boot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>IMU复试专业课</title>
+    <url>/2020/04/19/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE/</url>
+    <content><![CDATA[<h1 id="IMU"><a href="#IMU" class="headerlink" title="IMU"></a>IMU</h1><a id="more"></a>
+<h2 id="2019"><a href="#2019" class="headerlink" title="2019"></a>2019</h2><h2 id="2018"><a href="#2018" class="headerlink" title="2018"></a>2018</h2><blockquote>
+<p>1、输入俩个数，找到之间偶数，求和    </p>
+</blockquote>
+<p>分析: 因为不是偶数就是奇数，输入的a要小于b，从a开始判断a是否为偶数，是的话从a+2的地方开始，不是的话从a+1的地方开始，一直循环+2直至到b前</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include&quot;iostream&quot;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a,b,sum,t;</span><br><span class="line">	sum&#x3D;0;</span><br><span class="line">	cout&lt;&lt;&quot;请输入a  b：&quot;;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	if(a&gt;b)&#123;</span><br><span class="line">        t&#x3D;a;</span><br><span class="line">        a&#x3D;b;</span><br><span class="line">        b&#x3D;t;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	if(a%2&#x3D;&#x3D;0)&#123;</span><br><span class="line">        for(a&#x3D;a+2;a&lt;b;a&#x3D;a+2)</span><br><span class="line">        &#123;</span><br><span class="line">            sum+&#x3D;a;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	else&#123;</span><br><span class="line">        for(a&#x3D;a+1;a&lt;b;a&#x3D;a+2)</span><br><span class="line">        &#123;</span><br><span class="line">            sum+&#x3D;a;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;a&lt;&lt;&quot;与&quot;&lt;&lt;b&lt;&lt;&quot;之间的偶数&quot;&lt;&lt;sum&lt;&lt;endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行:<br><img src="/2020/04/19/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE%5C1.jpg" alt></p>
+<blockquote>
+<p>2、1+2+2+3+3+3+…+n+n+……+n求和</p>
+</blockquote>
+<p>分析:观察发现是从1加到n，对与1来说加了1次，对2来说加了2次，余此类推，根据加的数确定要加几次组成内循环</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include&quot;iostream&quot;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">	int sum&#x3D;0;</span><br><span class="line">	int n,i,j;</span><br><span class="line">	cout&lt;&lt;&quot;请输入n：&quot;;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line"></span><br><span class="line">	for(i&#x3D;1;i&lt;&#x3D;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j&#x3D;0;j&lt;i;j++)&#123;</span><br><span class="line">            sum+&#x3D;i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">	cout&lt;&lt;&quot;最后结果为：&quot;&lt;&lt;sum&lt;&lt;endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行:<br><img src="/2020/04/19/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE%5C2.jpg" alt>  </p>
+<p>由于复试题都是回忆版学长学姐回忆出了不同的问题，我们一并做了</p>
+<blockquote>
+<p>第二题第二种 输入一个数，计算 1* 2 * 2+…..n*n</p>
+</blockquote>
+<p>分析：这和上一个思路一样</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include&quot;iostream&quot;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int n,sum&#x3D;1;</span><br><span class="line">    int i,j;</span><br><span class="line">    cout&lt;&lt;&quot;请输入一个数n:&quot;&lt;&lt;endl;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    for(i&#x3D;1;i&lt;&#x3D;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for(j&#x3D;0;j&lt;i;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            sum&#x3D;sum*i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;&quot;结果: &quot;&lt;&lt;sum&lt;&lt;endl;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行:<br><img src="/2020/04/19/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE%5C3.jpg" alt>  </p>
+<blockquote>
+<p>3、迭代法求平方根</p>
+</blockquote>
+<p>分析:<br>首先我们要知道迭代法是啥,迭代法求平方根就是按照以下步骤构建一个序列x0,x1,…,xn,来逐步逼近方程f(x)=0的解:<br>1）选取适当的初值x0；</p>
+<p>2）确定迭代格式，即建立迭代关系，需要将方程f(x)=0改写为x=φ(x)的等价形式；</p>
+<p>3)   构造序列x0，x1，……，xn，即先求得x1=φ(x0)，再求x2=φ(x1)，……如此反复迭代，就得到一个数列x0， x1，……，xn，若这个数列收敛，即存在极值<img src="/2020/04/19/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE%5C4.1.jpg" alt>，且函数 φ(x)连续，则很容易得到这个极限值,x*就是方程f(x)=0的根。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include&quot;iostream&quot;</span><br><span class="line">#include&quot;cmath&quot;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	double x1,x2,a;</span><br><span class="line">	cout&lt;&lt;&quot;请输入a: &quot;;</span><br><span class="line">	cin&gt;&gt;a;</span><br><span class="line">	x2&#x3D;1.0;</span><br><span class="line">	int flag&#x3D;1;     &#x2F;&#x2F;这里的flag是控制位数</span><br><span class="line">	while(flag)</span><br><span class="line">	&#123;</span><br><span class="line">		x1&#x3D;x2;</span><br><span class="line">		x2&#x3D;(x1+a&#x2F;x1)&#x2F;2.0;</span><br><span class="line">		if(fabs(x1-x2)&lt;0.00001)     &#x2F;&#x2F;0.00001是控制小数到第5位</span><br><span class="line">		&#123;</span><br><span class="line">			cout&lt;&lt;&quot;平方根为：&quot;&lt;&lt;x2&lt;&lt;endl;</span><br><span class="line">			flag&#x3D;0;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行:<br><img src="/2020/04/19/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE%5C4.jpg" alt>  </p>
+<blockquote>
+<p>4、把文件里面的信息读入 然后80个字符是一行  统计行数 小写字母 大写字母 数字的个数  </p>
+</blockquote>
+<p>分析:这道题用到了文件流相关知识需要用到fstream库函数,</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include&quot;iostream&quot;</span><br><span class="line">#include&quot;fstream&quot;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	&#x2F;&#x2F;声明行数，数字，大小写个数 </span><br><span class="line">	int row,num,bch,sch,len;</span><br><span class="line">	row&#x3D;num&#x3D;bch&#x3D;sch&#x3D;len&#x3D;0;</span><br><span class="line">	&#x2F;&#x2F;使用ifstream创建对象 </span><br><span class="line">	ifstream ifs;</span><br><span class="line">	ifs.open(&quot;test.txt&quot;,ios::in);		&#x2F;&#x2F;使用open方法打开当前文件中的test.txt文档 </span><br><span class="line">	</span><br><span class="line">	char buf[1024];		&#x2F;&#x2F;将txt的信息存入 buf字符数组中 </span><br><span class="line">			</span><br><span class="line">&#x2F;&#x2F;	while(ifs &gt;&gt; buf)&#123;	</span><br><span class="line">&#x2F;&#x2F;		cout&lt;&lt;buf&lt;&lt;endl;</span><br><span class="line">&#x2F;&#x2F;	&#125;</span><br><span class="line">	while(!ifs.eof())&#123;	&#x2F;&#x2F;使用ifstream函数的eof方法判断结束为止 </span><br><span class="line">		ifs&gt;&gt;buf[len++];	&#x2F;&#x2F;将txt存入buf中 </span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;&quot;显示: &quot;&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;buf&lt;&lt;endl; </span><br><span class="line">	cout&lt;&lt;&quot;总数: &quot;&lt;&lt;len-1&lt;&lt;endl;</span><br><span class="line">	int r&#x3D;1;			&#x2F;&#x2F;用来判断80的换行数 </span><br><span class="line">	&#x2F;&#x2F;下面通过数组每一位的判断得到结果</span><br><span class="line">	for(int i&#x3D;0;i&lt;len-1;i++,r++)</span><br><span class="line">	&#123;</span><br><span class="line">		&#x2F;&#x2F;判断行数(80个标准) </span><br><span class="line">		if(r&#x3D;&#x3D;80)</span><br><span class="line">		&#123;</span><br><span class="line">			row++;</span><br><span class="line">			r&#x3D;1;	&#x2F;&#x2F;重新变为1开始计数 </span><br><span class="line">		&#125;</span><br><span class="line">		&#x2F;&#x2F;判断数字</span><br><span class="line">		if(buf[i]&gt;&#x3D;&#39;0&#39;&amp;&amp;buf[i]&lt;&#x3D;&#39;9&#39;)&#123;</span><br><span class="line">			num++;</span><br><span class="line">		&#125; </span><br><span class="line">		&#x2F;&#x2F;判断小写</span><br><span class="line">		else if(buf[i]&gt;&#x3D;&#39;a&#39;&amp;&amp;buf[i]&lt;&#x3D;&#39;z&#39;) &#123;</span><br><span class="line">			sch++;</span><br><span class="line">		&#125;</span><br><span class="line">		&#x2F;&#x2F;判断大写</span><br><span class="line">		else if(buf[i]&gt;&#x3D;&#39;A&#39;&amp;&amp;buf[i]&lt;&#x3D;&#39;Z&#39;) &#123;</span><br><span class="line">			bch++;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125; </span><br><span class="line">	cout&lt;&lt;&quot;行数: &quot;&lt;&lt;row+1&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;&quot;数字: &quot;&lt;&lt;num&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;&quot;小写: &quot;&lt;&lt;sch&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;&quot;大写: &quot;&lt;&lt;bch&lt;&lt;endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>结果:<br>test.txt<br><img src="/2020/04/19/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE%5C5.jpg" alt><br>结果:<br><img src="/2020/04/19/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE/IMU%E5%A4%8D%E8%AF%95%E4%B8%93%E4%B8%9A%E8%AF%BE%5C6.jpg" alt>  </p>
+<blockquote>
+<p>6、选择排序</p>
+</blockquote>
+<h2 id="2017"><a href="#2017" class="headerlink" title="2017"></a>2017</h2>]]></content>
+      <categories>
+        <category>计算机基础知识</category>
+      </categories>
+      <tags>
+        <tag>复试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>springboot-bbs0</title>
+    <url>/2020/04/14/springboot-bbs0/</url>
+    <content><![CDATA[<h1 id="SpringBoot论坛-lt-0-gt"><a href="#SpringBoot论坛-lt-0-gt" class="headerlink" title="SpringBoot论坛&lt;0&gt;"></a>SpringBoot论坛&lt;0&gt;</h1><a id="more"></a>
+<h2 id="创建springboot项目"><a href="#创建springboot项目" class="headerlink" title="创建springboot项目"></a>创建springboot项目</h2><p>1.新建<br><img src="/2020/04/14/springboot-bbs0/1.jpg" alt><br>2.选择spring项目<br><img src="/2020/04/14/springboot-bbs0/2.jpg" alt><br>3.填写<br><img src="/2020/04/14/springboot-bbs0/3.jpg" alt><br><img src="/2020/04/14/springboot-bbs0/4.jpg" alt><br><img src="/2020/04/14/springboot-bbs0/5.jpg" alt></p>
+<p>4.创建完成后<br><img src="/2020/04/14/springboot-bbs0/6.jpg" alt></p>
+<h2 id="添加环境"><a href="#添加环境" class="headerlink" title="添加环境"></a>添加环境</h2><p>进入spring的官方网页，选择下面内容<br><img src="/2020/04/14/springboot-bbs0/7.jpg" alt>  </p>
+<p>复制内容到项目中的pom配置文件中<br><img src="/2020/04/14/springboot-bbs0/8.jpg" alt>  </p>
+<h2 id="测试hello程序"><a href="#测试hello程序" class="headerlink" title="测试hello程序"></a>测试hello程序</h2><p>在bbs中创建controller文件夹，并且创建一个测试类HelloController<br><img src="/2020/04/14/springboot-bbs0/9.jpg" alt><br>HelloController内容如下<br><img src="/2020/04/14/springboot-bbs0/10.jpg" alt><br>再到spring官网找到Html相关页面，复制<br><img src="/2020/04/14/springboot-bbs0/11.jpg" alt><br>在templates中创建静态网页，并将复制内容拷贝到网页中<br><img src="/2020/04/14/springboot-bbs0/12.jpg" alt><br>运行后如下<br><img src="/2020/04/14/springboot-bbs0/13.jpg" alt><br>到配置文件中可以修改tomcat的端口号，我们改成8886<br><img src="/2020/04/14/springboot-bbs0/14.jpg" alt>  </p>
+<h2 id="使用Github托管代码"><a href="#使用Github托管代码" class="headerlink" title="使用Github托管代码"></a>使用Github托管代码</h2><p>现在github上创建仓库<br><img src="/2020/04/14/springboot-bbs0/15.jpg" alt><br>在项目中进行git初始化<br><img src="/2020/04/14/springboot-bbs0/16.jpg" alt> </p>
+<p>利用git status看状态<br><img src="/2020/04/14/springboot-bbs0/17.jpg" alt> </p>
+<p>使用git add . 使用它会把工作时的所有变化提交到暂存区<br><img src="/2020/04/14/springboot-bbs0/18.jpg" alt> </p>
+<p>git提交命令<br><img src="/2020/04/14/springboot-bbs0/19.jpg" alt> </p>
+<p>查看状态<br><img src="/2020/04/14/springboot-bbs0/20.jpg" alt><br>进入你项目的初始化后的git中找到config配置文件<br><img src="/2020/04/14/springboot-bbs0/21.jpg" alt> </p>
+<p>修改为<br><img src="/2020/04/14/springboot-bbs0/22.jpg" alt> </p>
+<p>这一步按照github上的走<br><img src="/2020/04/14/springboot-bbs0/23.jpg" alt> </p>
+<p>这一步也是<br><img src="/2020/04/14/springboot-bbs0/24.jpg" alt> </p>
+<p>弄好之后你的项目上传到github上了<br><img src="/2020/04/14/springboot-bbs0/25.jpg" alt> </p>
+<h2 id="使用bootstrap编写导航栏样式"><a href="#使用bootstrap编写导航栏样式" class="headerlink" title="使用bootstrap编写导航栏样式"></a>使用bootstrap编写导航栏样式</h2><p>在bootstrap官网上下载文件<br><img src="/2020/04/14/springboot-bbs0/26.jpg" alt><br><img src="/2020/04/14/springboot-bbs0/27.jpg" alt><br>复制到项目中的static文件中<br><img src="/2020/04/14/springboot-bbs0/28.jpg" alt> </p>
+<p>使用bootstrap默认导航条<br><img src="/2020/04/14/springboot-bbs0/29.jpg" alt>  </p>
+<p>编写网页<br>引入css和js  并且使用默认代码并修改<br><img src="/2020/04/14/springboot-bbs0/30.jpg" alt>  </p>
+<p>加上controller代码<br><img src="/2020/04/14/springboot-bbs0/32.jpg" alt></p>
+<blockquote>
+<p>注意：如果出现404 那么在pom中添加引擎即下面代码</p>
+</blockquote>
+<p><img src="/2020/04/14/springboot-bbs0/31.jpg" alt><br>完成后如图</p>
+<p><img src="/2020/04/14/springboot-bbs0/33.jpg" alt>  </p>
+<p>修改后git到github上去<br>git status //观察状态<br>git add .     //将本次修改git到暂存区<br>git status //观察<br>git commit -m “###” //提交<br>git push //提交至github</p>
+<h2 id="实现github登录"><a href="#实现github登录" class="headerlink" title="实现github登录"></a>实现github登录</h2><p>在github上<br><img src="/2020/04/14/springboot-bbs0/34.jpg" alt><br>利用Oauth，创建<br><img src="/2020/04/14/springboot-bbs0/35.jpg" alt>  </p>
+<p><img src="/2020/04/14/springboot-bbs0/36.jpg" alt>  </p>
+<h2 id="使用Github登录"><a href="#使用Github登录" class="headerlink" title="使用Github登录"></a>使用Github登录</h2><ul>
+<li><p>首先进入登录的那个页面index找到登录的地方 </p>
+</li>
+<li><p>找到github授权登录的教程页面找到以下地址复制到登录按钮中<br><img src="/2020/04/14/springboot-bbs0/37.jpg" alt>   </p>
+</li>
+<li><p>在github上找到以下申请的OAuth Apps 找到client_id复制<br><img src="/2020/04/14/springboot-bbs0/38.jpg" alt></p>
+</li>
+<li><p>在复制返回地址<br><img src="/2020/04/14/springboot-bbs0/39.jpg" alt>  </p>
+</li>
+<li><p>最后在index上的代码如下<br><img src="/2020/04/14/springboot-bbs0/40.jpg" alt>  </p>
+</li>
+<li><p>运行代码点击登录时的样子<br><img src="/2020/04/14/springboot-bbs0/41.jpg" alt>  </p>
+</li>
+<li><p>获取code操作  </p>
+</li>
+<li><p>新建类编写代码<br><img src="/2020/04/14/springboot-bbs0/42.jpg" alt>  </p>
+</li>
+</ul>
+<blockquote>
+<p>登录获取请求  </p>
+</blockquote>
+<p>-使用okHttp<br><img src="/2020/04/14/springboot-bbs0/43.jpg" alt>  </p>
+<ul>
+<li><p>新建provider文件夹<br><img src="/2020/04/14/springboot-bbs0/44.jpg" alt> </p>
+</li>
+<li><p>新建dto文件夹<br><img src="/2020/04/14/springboot-bbs0/45.jpg" alt> </p>
+</li>
+<li><p>创建类AccessTokenDTO<br><img src="/2020/04/14/springboot-bbs0/46.jpg" alt></p>
+</li>
+<li><p>在okhttp的官网上复制post请求的代码进行修改<br><img src="/2020/04/14/springboot-bbs0/47.jpg" alt> </p>
+</li>
+<li><p>先引入okhttp依赖<br><img src="/2020/04/14/springboot-bbs0/48.jpg" alt> </p>
+</li>
+<li><p>在引入fastjson依赖<br><img src="/2020/04/14/springboot-bbs0/49.jpg" alt><br>找到下面的复制<br><img src="/2020/04/14/springboot-bbs0/50.jpg" alt> </p>
+</li>
+<li><p>引入<br><img src="/2020/04/14/springboot-bbs0/51.jpg" alt> </p>
+</li>
+<li><p>创建GithubProvider类<br><img src="/2020/04/14/springboot-bbs0/52.jpg" alt> </p>
+</li>
+<li><p>创建AutorizeController类<br><img src="/2020/04/14/springboot-bbs0/53.jpg" alt> </p>
+</li>
+<li><p>在github上找到这个并新建<br><img src="/2020/04/14/springboot-bbs0/54.jpg" alt> </p>
+</li>
+<li><p>我们用的是用户信息，所以点击user<br><img src="/2020/04/14/springboot-bbs0/55.jpg" alt> </p>
+</li>
+<li><p>创建后有一段码<br><img src="/2020/04/14/springboot-bbs0/56.jpg" alt> </p>
+</li>
+<li><p>创建GithubUser类<br><img src="/2020/04/14/springboot-bbs0/57.jpg" alt> </p>
+</li>
+<li><p>在githubprovider类中创建getuser方法<br><img src="/2020/04/14/springboot-bbs0/58.jpg" alt> </p>
+</li>
+<li><p>再次进入okhttp的官网找到Get的方法<br><img src="/2020/04/14/springboot-bbs0/59.jpg" alt> </p>
+</li>
+<li><p>getuser方法代码如下<br><img src="/2020/04/14/springboot-bbs0/60.jpg" alt> </p>
+</li>
+<li><p>修改Githubprovider类中的getAccessToken方法<br><img src="/2020/04/14/springboot-bbs0/61.jpg" alt> </p>
+</li>
+<li><p>修改为以下<br><img src="/2020/04/14/springboot-bbs0/62.jpg" alt> </p>
+</li>
+<li><p>AuthorizeController类中进行修改<br><img src="/2020/04/14/springboot-bbs0/63.jpg" alt> </p>
+</li>
+<li><p>由于个人github账户的name为空所以显示出来是这样<br><img src="/2020/04/14/springboot-bbs0/64.jpg" alt> </p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>JavaEE</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>spring boot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DIY手机稳定器</title>
     <url>/2020/03/28/DIY%E6%89%8B%E6%9C%BA%E7%A8%B3%E5%AE%9A%E5%99%A8/</url>
     <content><![CDATA[<h1 id="DIY手机稳定器"><a href="#DIY手机稳定器" class="headerlink" title="DIY手机稳定器"></a>DIY手机稳定器</h1><a id="more"></a>
@@ -180,7 +351,18 @@
 <a id="more"></a>
 
 <h1 id="OpenCV数据结构和基本绘图"><a href="#OpenCV数据结构和基本绘图" class="headerlink" title="OpenCV数据结构和基本绘图"></a>OpenCV数据结构和基本绘图</h1><h2 id="基础图像容器Mat"><a href="#基础图像容器Mat" class="headerlink" title="基础图像容器Mat"></a>基础图像容器Mat</h2><p>Mat也就是矩阵的意思，在计算机图像上的图像都是由一块一块的矩阵累积而成的。  </p>
-<h3 id><a href="#" class="headerlink" title></a></h3>]]></content>
+<h3 id="Mat结构和使用"><a href="#Mat结构和使用" class="headerlink" title="Mat结构和使用"></a>Mat结构和使用</h3><p>Mat是一个类，由两个数据部分组成：  </p>
+<ul>
+<li>1.<strong>矩阵头</strong>：矩阵尺寸、存储方法、存储地址等  </li>
+<li>2.指向存储所有像素值的矩阵（根据所选存储方法的不同，矩阵可以是不同的维数）的<strong>指针</strong>  <blockquote>
+<p>当用Mat构建一个对象，并把对象复制给其他Mat类的变量中的话（尽量减少这样的操作），每个变量存储的Mat类只复制<strong>信息头和矩阵指针</strong>，而不复制<strong>矩阵</strong>  </p>
+</blockquote>
+</li>
+</ul>
+<p><strong>总结</strong>：<br>1.OpenCV函数中输出图像的内存分配是自动完成的（如果不特别指定的话）<br>2.使用OpenCV的C++接口时不需要考虑内存释放问题<br>3.赋值运算符和拷贝构造函数只复制信息头<br>4.使用函数clone()或者copyTo()来复制一幅图像矩阵  </p>
+<h3 id="像素值的存储方法"><a href="#像素值的存储方法" class="headerlink" title="像素值的存储方法"></a>像素值的存储方法</h3><p><strong>RGB</strong>颜色空间是最常用的一种颜色空间<br><strong>HSV</strong>和<strong>HLS</strong>把颜色分解成色调、饱和度和亮度/明度<br><strong>YCrCb</strong>在JPEG图像格式中广泛使用  </p>
+<h3 id="显式创建Mat对象的七种方法"><a href="#显式创建Mat对象的七种方法" class="headerlink" title="显式创建Mat对象的七种方法"></a>显式创建Mat对象的七种方法</h3><p>1.使用Mat()构造函数  </p>
+]]></content>
       <categories>
         <category>OpenCv</category>
       </categories>
